@@ -20,16 +20,14 @@ const Contato = ({ nome, email, telefone }: Props) => {
       <S.ContainerBotao>
         {estaEditando ? (
           <>
-            <S.BotaoEditar>Salvar</S.BotaoEditar>
+            <S.BotaoSalvar>Salvar</S.BotaoSalvar>
             <S.BotaoRemover onClick={() => setEditando(false)}>
               Cancelar
             </S.BotaoRemover>
           </>
         ) : (
           <>
-            <S.BotaoEditar onClick={() => setEditando(true)}>
-              Editar
-            </S.BotaoEditar>
+            <S.Botao onClick={() => setEditando(true)}>Editar</S.Botao>
             <S.BotaoRemover>Remover</S.BotaoRemover>
           </>
         )}

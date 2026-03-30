@@ -20,24 +20,22 @@ export const CardTexto = styled.p`
   color: #afafaf;
 `
 
-export const BotaoEditar = styled.button`
+export const Botao = styled.button`
   margin-right: 12px;
   padding: 8px 12px;
-  background-color: #74b9ff;
+  background-color: #2980b9;
   border-radius: 7px;
   border: none;
   font-size: 12px;
+  font-weight: bold;
   cursor: pointer;
-  color: #065a9a;
+  color: #fff;
 `
 
-export const BotaoRemover = styled.button`
-  margin-right: 12px;
-  padding: 8px 12px;
-  background-color: #f87077b0;
-  border-radius: 7px;
-  border: none;
-  font-size: 12px;
-  cursor: pointer;
-  color: #e10931;
+export const BotaoSalvar = styled(Botao)`
+  background-color: #27ae60;
+`
+
+export const BotaoRemover = styled(Botao)`
+  background-color: #c0392b;
 `
