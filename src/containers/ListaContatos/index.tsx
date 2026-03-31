@@ -1,36 +1,21 @@
 import { ContainerMain } from './style'
 import Contato from '../../components/contatos'
-
-const Contatos = [
-  {
-    nome: 'Arthur Santos',
-    email: 'arthur.s.vale@gmail.com',
-    telefone: 619999 - 8990
-  },
-  {
-    nome: 'Marcelo Barbosa',
-    email: 'marcelo.barbosa@gmail.com',
-    telefone: 619249 - 8190
-  },
-  {
-    nome: 'Fernanda Monteiro',
-    email: 'fernanda.monteiro@gmail.com',
-    telefone: 611992 - 4567
-  },
-  {
-    nome: 'Maria Santos',
-    email: 'maria.santos@gmail.com',
-    telefone: 6167459 - 8392
-  }
-]
+import { useSelector } from 'react-redux'
+import { RootReducer } from '../../store'
 
 const ListaContato = () => {
+  const { itens } = useSelector((state: RootReducer) => state.contatos)
   return (
     <ContainerMain>
       <ul>
-        {Contatos.map((i) => (
+        {itens.map((i) => (
           <li key={i.nome}>
-            <Contato nome={i.nome} email={i.email} telefone={i.telefone} />
+            <Contato
+              id={i.id}
+              nome={i.nome}
+              email={i.email}
+              telefone={i.telefone}
+            />
           </li>
         ))}
       </ul>
