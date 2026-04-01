@@ -15,8 +15,15 @@ export const ContainerBotao = styled.div`
   border-top: 2px solid rgba(0, 0, 0, 0.1);
 `
 
-export const CardTexto = styled.p`
-  margin-top: 12px;
+export const CardTexto = styled.textarea`
+  display: block;
+  width: 100%;
+  resize: none;
+  border: none;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  line-height: 24px;
+  font-size: 14px;
   color: #afafaf;
 `
 
