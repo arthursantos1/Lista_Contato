@@ -8,6 +8,7 @@ export const ContainerBusca = styled.aside`
   position: fixed;
   top: 0px;
   left: 0px;
+  background-color: #dfe6e9;
 `
 
 export const CampoBusca = styled.div`
