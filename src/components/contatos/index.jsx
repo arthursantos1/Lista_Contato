@@ -5,10 +5,6 @@ import * as S from './styles'
 import { remover } from '../../store/reducers/contato'
 import ContatoClass from '../../models/Contato'
 
-import { IoPerson } from 'react-icons/io5'
-import { MdEmail } from 'react-icons/md'
-import { BsFillTelephoneFill } from 'react-icons/bs'
-
 type Props = ContatoClass
 
 const Contato = ({
